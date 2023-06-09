@@ -1,0 +1,7 @@
+<h3>Weather App</h3>
+    
+    <p>Enter a city name:</p>
+    <input [(ngModel)]="cityName" />
+    <button (click)="getWeather()">Get Weather</button>
+    
+    <app-weather *ngIf="weatherData" [weatherData]="weatherData"></app-weather>

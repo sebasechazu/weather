@@ -1,0 +1,8 @@
+  <div class="card" style="width: 18rem;">
+  <div *ngIf="weatherData" class="card-body">
+    <h3 class="card-title">{{ weatherData.name }}</h3>
+    <p class="card-text">Temperatura: {{ weatherData.temperature }}°F</p>
+    <p class="card-text">Humedad: {{ weatherData.humidity }}%</p>
+    <p class="card-text">Descripción: {{ weatherData.description }}</p>
+  </div>
+</div>
