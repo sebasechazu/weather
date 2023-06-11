@@ -8,7 +8,7 @@
 <input @bind="cityName" />
 <button @onclick="GetWeather">Obtener el clima</button>
 
-<WeatherInfo WeatherData="weatherData" ></WeatherInfo>
+<WeatherInfo weatherData="weatherData" ></WeatherInfo>
 
 @code {
     private string? cityName;

@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
+﻿using System.Net.Http.Json;
 using WeatherApp.Models;
 
 public class WeatherService
@@ -27,17 +24,17 @@ public class WeatherService
             return new WeatherData
             {
                 Name = response.Name,
-                Temperature = response.Main.Temperature,
+                Temperature = response.Main.temp,
                 Humidity = response.Main.Humidity,
                 Description = response.Weather[0].Description
 
             };
+
         }
         return null;
     }
 }
-// Clases auxiliares para deserializar la respuesta JSON del API de OpenWeatherMap
-
+// clase auxiliar
 public class WeatherApiResponse
 {
     public required string Name { get; set; }
@@ -47,8 +44,8 @@ public class WeatherApiResponse
 
 public class WeatherMain
 {
-    public double Temperature { get; set; }
-    public int Humidity { get; set; }
+    public decimal temp { get; set; }
+    public decimal Humidity { get; set; }
 }
 
 public class WeatherDescription

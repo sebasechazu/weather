@@ -16,7 +16,7 @@ export class WeatherService {
     return this.http.get(apiUrl).pipe(
       map((response: any) => {
         return {
-          cityName: response.name,
+          name: response.name,
           temperature: response.main.temp,
           humidity: response.main.humidity,
           description: response.weather[0].description,

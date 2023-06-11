@@ -1,14 +1,18 @@
 ﻿@using WeatherApp.Models;
 
-@if (WeatherData != null)
+@if (weatherData != null)
 {
-    <p>Ciudad: @WeatherData.Name</p>
-    <p>Temperatura: @WeatherData.Temperature °C</p>
-    <p>Humedad: @WeatherData.Humidity %</p>
-    <p>Descripción: @WeatherData.Description</p>
+    <div class="card" style="width: 18rem;">
+        <h3>@weatherData.Name</h3>
+        <p>Temperatura: @weatherData.Temperature °C</p>
+        <p>Humedad: @weatherData.Humidity %</p>
+        <p>Descripción: @weatherData.Description</p>
+    </div>
 }
 
 @code {
     [Parameter]
-    public WeatherData? WeatherData { get; set; }
+    public WeatherData? weatherData { get; set; }
+
 }
+
