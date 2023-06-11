@@ -4,22 +4,16 @@
 
 <h3>Weather App</h3>
 
-<p>Enter a city name:</p>
+<p>Ingrese el nombre de una ciudad:</p>
 <input @bind="cityName" />
-<button @onclick="GetWeather">Get Weather</button>
+<button @onclick="GetWeather">Obtener el clima</button>
 
-@if (weatherData != null)
-{
-    <h4>@weatherData.Name</h4>
-    <p>Temperature: @weatherData.Temperature °C</p>
-    <p>Humidity: @weatherData.Humidity %</p>
-    <p>Description: @weatherData.Description</p>
-}
+<WeatherInfo WeatherData="weatherData" ></WeatherInfo>
 
 @code {
-    private string cityName;
-    private WeatherData weatherData;
-    private WeatherService weatherService;
+    private string? cityName;
+    private WeatherData? weatherData;
+    private WeatherService? weatherService;
 
     protected override async Task OnInitializedAsync()
     {
@@ -29,5 +23,6 @@
     private async Task GetWeather()
     {
         weatherData = await weatherService.GetWeatherData(cityName);
+
     }
 }

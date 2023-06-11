@@ -3,8 +3,8 @@
     public class WeatherData
     {
         public string? Name { get; set; }
-        public float Temperature { get; set; }
-        public float Humidity { get; set; }
+        public double Temperature { get; set; }
+        public int Humidity { get; set; }
         public string? Description { get; set; }
     }
 

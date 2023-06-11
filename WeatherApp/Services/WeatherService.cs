@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using Newtonsoft.Json;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using WeatherApp.Models;
@@ -12,42 +13,45 @@ public class WeatherService
         _httpClient = httpClient;
     }
 
-    public async Task<WeatherData> GetWeatherData(string cityName)
+    public async Task<WeatherData?> GetWeatherData(string cityName)
     {
         string apiKey = "b43f54cd7339e23df3cf11339274bed5";
-        string apiUrl = $"https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={apiKey}&units=metric";
+        string apiUrl = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid="+apiKey+"&units=metric&lang=es";
 
-        var weatherResponse = await _httpClient.GetFromJsonAsync<WeatherResponse>(apiUrl);
+        var response = await _httpClient.GetFromJsonAsync<WeatherApiResponse>(apiUrl);
 
-        if (weatherResponse != null)
+        Console.WriteLine(response);
+
+        if (response != null)
         {
             return new WeatherData
             {
-                Name = weatherResponse.Name,
-                Temperature = weatherResponse.Main.Temp,
-                Humidity = weatherResponse.Main.Humidity,
-                Description = weatherResponse.Weather[0].Description
+                Name = response.Name,
+                Temperature = response.Main.Temperature,
+                Humidity = response.Main.Humidity,
+                Description = response.Weather[0].Description
+
             };
         }
-
         return null;
     }
 }
+// Clases auxiliares para deserializar la respuesta JSON del API de OpenWeatherMap
 
-public class WeatherResponse
+public class WeatherApiResponse
 {
-    public string Name { get; set; }
-    public MainData Main { get; set; }
-    public WeatherDescription[] Weather { get; set; }
+    public required string Name { get; set; }
+    public required WeatherMain Main { get; set; }
+    public required WeatherDescription[] Weather { get; set; }
 }
 
-public class MainData
+public class WeatherMain
 {
-    public float Temp { get; set; }
-    public float Humidity { get; set; }
+    public double Temperature { get; set; }
+    public int Humidity { get; set; }
 }
 
 public class WeatherDescription
 {
-    public string Description { get; set; }
+    public required string Description { get; set; }
 }

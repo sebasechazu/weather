@@ -1,18 +1,11 @@
 ﻿@using WeatherApp.Models;
 
-
-<h4>Datos del Clima</h4>
-
 @if (WeatherData != null)
 {
     <p>Ciudad: @WeatherData.Name</p>
     <p>Temperatura: @WeatherData.Temperature °C</p>
     <p>Humedad: @WeatherData.Humidity %</p>
     <p>Descripción: @WeatherData.Description</p>
-}
-else
-{
-    <p>No se encontraron datos de clima.</p>
 }
 
 @code {
