@@ -7,8 +7,8 @@
         <p>Temperatura: @weatherData.Temperature °C</p>
         <p>Humedad: @weatherData.Humidity %</p>
         <p>Descripción: @weatherData.Description</p>
-        <p></p>
-        <i class="wi @GetWeatherIconClass(weatherData.icon)"></i>
+        <p>@weatherData.icon</p>
+        <i class="wi @GetWeatherIconClass(weatherData.Description)"></i>
 
     </div>
 }
@@ -20,18 +20,26 @@
     {
         switch (description.ToLower())
         {
-            case "clear":
+            case "cielo claro":
                 return "wi-day-sunny";
-            case "clouds":
+            case "pocas nubes":
+                return "wi-cloud";
+            case "muy nuboso":
                 return "wi-cloudy";
-            case "rain":
-                return "wi-rain";
-            case "thunderstorm":
+            case "nubes rotas":
+                return "wi-cloudy";
+            case "lluvia de lluvia":
+                return "wi-rain";    
+            case "lluvia":
+                return "wi-rain";           
+            case "tormenta":
                 return "wi-thunderstorm";
-            case "snow":
+            case "nieve":
                 return "wi-snow";
+            case "niebla":
+                return "wi-fog";
             default:
-                return "wi-day-cloudy";
+                return "wi-meteor";
         }
     }
 }
