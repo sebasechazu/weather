@@ -8,7 +8,7 @@
         <p>Humedad: @weatherData.Humidity %</p>
         <p>Descripción: @weatherData.Description</p>
         <p></p>
-        <i class="wi @getIcon(@weatherData.icon)"></i>
+        <i class="wi @GetWeatherIconClass(weatherData.icon)"></i>
 
     </div>
 }
@@ -16,9 +16,23 @@
 @code {
     [Parameter]
     public WeatherData? weatherData { get; set; }
-
-    string getIcon(string code){
-        return $"wi-own-{code}";
+ private string GetWeatherIconClass(string description)
+    {
+        switch (description.ToLower())
+        {
+            case "clear":
+                return "wi-day-sunny";
+            case "clouds":
+                return "wi-cloudy";
+            case "rain":
+                return "wi-rain";
+            case "thunderstorm":
+                return "wi-thunderstorm";
+            case "snow":
+                return "wi-snow";
+            default:
+                return "wi-day-cloudy";
+        }
     }
 }
 
