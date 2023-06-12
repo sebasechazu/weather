@@ -7,7 +7,7 @@
         <p>Temperatura: @weatherData.Temperature °C</p>
         <p>Humedad: @weatherData.Humidity %</p>
         <p>Descripción: @weatherData.Description</p>
-        <p>icon: @weatherData.icon</p>
+        <i class="wi @getIcon(@weatherData.icon)"></i>
 
     </div>
 }
@@ -16,5 +16,8 @@
     [Parameter]
     public WeatherData? weatherData { get; set; }
 
+    string getIcon(string code){
+        return $"wi-own-{code}";
+    }
 }
 

@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\css\\weather-icons-wind.css",
+      "PackagePath": "staticwebassets\\css\\weather-icons-wind.css"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\css\\weather-icons-wind.min.css",
+      "PackagePath": "staticwebassets\\css\\weather-icons-wind.min.css"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\css\\weather-icons.css",
+      "PackagePath": "staticwebassets\\css\\weather-icons.css"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\css\\weather-icons.min.css",
+      "PackagePath": "staticwebassets\\css\\weather-icons.min.css"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\font\\weathericons-regular-webfont.eot",
+      "PackagePath": "staticwebassets\\font\\weathericons-regular-webfont.eot"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\font\\weathericons-regular-webfont.svg",
+      "PackagePath": "staticwebassets\\font\\weathericons-regular-webfont.svg"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\font\\weathericons-regular-webfont.ttf",
+      "PackagePath": "staticwebassets\\font\\weathericons-regular-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\font\\weathericons-regular-webfont.woff",
+      "PackagePath": "staticwebassets\\font\\weathericons-regular-webfont.woff"
+    },
+    {
+      "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\font\\weathericons-regular-webfont.woff2",
+      "PackagePath": "staticwebassets\\font\\weathericons-regular-webfont.woff2"
+    },
+    {
       "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

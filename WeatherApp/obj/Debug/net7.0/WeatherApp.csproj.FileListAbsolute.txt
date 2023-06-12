@@ -828,3 +828,5 @@ C:\Repositorios\weather\WeatherApp\obj\Debug\net7.0\WeatherApp.dll
 C:\Repositorios\weather\WeatherApp\obj\Debug\net7.0\refint\WeatherApp.dll
 C:\Repositorios\weather\WeatherApp\obj\Debug\net7.0\WeatherApp.pdb
 C:\Repositorios\weather\WeatherApp\obj\Debug\net7.0\ref\WeatherApp.dll
+C:\Repositorios\weather\WeatherApp\bin\Debug\net7.0\package-lock.json
+C:\Repositorios\weather\WeatherApp\bin\Debug\net7.0\package.json
