@@ -7,7 +7,6 @@
         <p>Temperatura: @weatherData.Temperature °C</p>
         <p>Humedad: @weatherData.Humidity %</p>
         <p>Descripción: @weatherData.Description</p>
-        <p>@weatherData.icon</p>
         <i class="wi @GetWeatherIconClass(weatherData.Description)"></i>
 
     </div>
@@ -24,10 +23,12 @@
                 return "wi-day-sunny";
             case "pocas nubes":
                 return "wi-cloud";
+            case "nubes":
+                return "wi-cloudy";
+            case "nubes dispersas":
+                return "wi-cloudy";
             case "muy nuboso":
-                return "wi-cloudy";
-            case "nubes rotas":
-                return "wi-cloudy";
+                return "wy-cloudy";
             case "lluvia de lluvia":
                 return "wi-rain";    
             case "lluvia":

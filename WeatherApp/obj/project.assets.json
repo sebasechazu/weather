@@ -1858,7 +1858,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sebas\\.nuget\\packages\\": {}
+    "C:\\Users\\SebastianEchazu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1866,11 +1866,11 @@
       "projectUniqueName": "C:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
       "projectName": "WeatherApp",
       "projectPath": "C:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
-      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\SebastianEchazu\\.nuget\\packages\\",
       "outputPath": "C:\\Repositorios\\weather\\WeatherApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SebastianEchazu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
