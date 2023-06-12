@@ -1863,11 +1863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
+      "projectUniqueName": "c:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
       "projectName": "WeatherApp",
-      "projectPath": "C:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
+      "projectPath": "c:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
       "packagesPath": "C:\\Users\\SebastianEchazu\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorios\\weather\\WeatherApp\\obj\\",
+      "outputPath": "c:\\Repositorios\\weather\\WeatherApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SebastianEchazu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1940,5 +1940,13 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché c:\\Repositorios\\weather\\WeatherApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

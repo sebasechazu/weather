@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "naoa1crYnCCKQQ6sqzwnilkVDoAt7hNRzqsfqqYzwlRdxJpWvymfVYzp3EhO0FQiGqYkRj2AyLqZA+rCJYtWaw==",
+  "dgSpecHash": "r8+JEXwd8lDwlP0ejjavezLMpMtPVI87pVZiVuzLufCc1ZIWLA84Jf6rtHONXOTlqiuFsFpQiyRGYzK+1RdlIg==",
   "success": true,
-  "projectFilePath": "C:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
+  "projectFilePath": "c:\\Repositorios\\weather\\WeatherApp\\WeatherApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SebastianEchazu\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\SebastianEchazu\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
@@ -34,5 +34,12 @@
     "C:\\Users\\SebastianEchazu\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\SebastianEchazu\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.5.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché c:\\Repositorios\\weather\\WeatherApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

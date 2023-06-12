@@ -1,6 +1,7 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
       "Id": "C:\\Repositorios\\weather\\WeatherApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
@@ -14,7 +15,26 @@
     },
     {
       "Id": "C:\\Repositorios\\weather\\WeatherApp\\wwwroot\\index.html",
+=======
+      "Id": "D:\\Workspace\\_Personal\\weather\\weatherApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Workspace\\_Personal\\weather\\weatherApp\\obj\\Debug\\net7.0\\build-gz\\UaEJVsds.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\Workspace\\_Personal\\weather\\weatherApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Workspace\\_Personal\\weather\\weatherApp\\wwwroot\\index.html",
+>>>>>>> 4b1166d7a9b65d98302f6733c27bbf0a2dc70155
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Workspace\\_Personal\\weather\\weatherApp\\wwwroot\\layout.html",
+      "PackagePath": "staticwebassets\\layout.html"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WeatherApp.Microsoft.AspNetCore.StaticWebAssets.props",
