@@ -15,14 +15,7 @@
     private WeatherData? weatherData;
     private WeatherService? weatherService;
 
-    protected override async Task OnInitializedAsync()
-    {
-        weatherService = new WeatherService(new HttpClient());
-    }
+    protected override async Task OnInitializedAsync() => weatherService = new WeatherService(new HttpClient());
 
-    private async Task GetWeather()
-    {
-        weatherData = await weatherService.GetWeatherData(cityName);
-
-    }
+    private async Task GetWeather() => weatherData = await weatherService.GetWeatherData(cityName);
 }
