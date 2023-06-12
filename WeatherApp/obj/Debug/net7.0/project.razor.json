@@ -9,43 +9,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1570039231,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.App",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WeatherApp",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1563812749,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.App",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WeatherApp.App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WeatherApp",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1385586658,
         "Kind": "Components.Component",
         "Name": "WeatherApp.Pages.Index",
@@ -137,6 +100,43 @@
           "Common.TypeName": "WeatherApp.Pages.WeatherInfo",
           "Common.TypeNameIdentifier": "WeatherInfo",
           "Common.TypeNamespace": "WeatherApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1570039231,
+        "Kind": "Components.Component",
+        "Name": "WeatherApp.App",
+        "AssemblyName": "WeatherApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WeatherApp.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "WeatherApp",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1563812749,
+        "Kind": "Components.Component",
+        "Name": "WeatherApp.App",
+        "AssemblyName": "WeatherApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WeatherApp.App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "WeatherApp.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "WeatherApp",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
