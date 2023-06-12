@@ -26,7 +26,8 @@ public class WeatherService
                 Name = response.Name,
                 Temperature = response.Main.temp,
                 Humidity = response.Main.Humidity,
-                Description = response.Weather[0].Description
+                Description = response.Weather[0].Description,
+                icon = response.Weather[0].icon,
 
             };
 
@@ -51,4 +52,5 @@ public class WeatherMain
 public class WeatherDescription
 {
     public required string Description { get; set; }
+    public required string icon { get; set; }
 }

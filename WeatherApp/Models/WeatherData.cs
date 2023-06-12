@@ -6,5 +6,6 @@
         public decimal Temperature { get; set; }
         public decimal Humidity { get; set; }
         public string? Description { get; set; }
+        public string? icon {get; set; }
     }
 }
