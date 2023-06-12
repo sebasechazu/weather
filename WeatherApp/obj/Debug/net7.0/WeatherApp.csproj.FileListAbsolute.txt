@@ -1641,8 +1641,6 @@ D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\yOWmHvrR.gz
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\CKw+QxoH.gz
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\kS9oQDIn.gz
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\4F1HWlrT.gz
-D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\3+mDD+op.gz
-D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\k3ycTVC3.gz
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\build-gz\UaEJVsds.gz
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\blazor.boot.json
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\staticwebassets\msbuild.WeatherApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -1658,3 +1656,5 @@ D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\WeatherApp.dll
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\refint\WeatherApp.dll
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\WeatherApp.pdb
 D:\Workspace\_Personal\weather\WeatherApp\obj\Debug\net7.0\ref\WeatherApp.dll
+D:\Workspace\_Personal\weather\weatherApp\obj\Debug\net7.0\build-gz\ryYVKiT5.gz
+D:\Workspace\_Personal\weather\weatherApp\obj\Debug\net7.0\build-gz\XgmDOXAO.gz

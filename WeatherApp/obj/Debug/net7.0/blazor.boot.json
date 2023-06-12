@@ -199,13 +199,13 @@
       "mscorlib.dll": "sha256-3H8zsATEgIcRSRoZhWYtgfKT5VniJvhcYxLruf8koAY=",
       "netstandard.dll": "sha256-bbx+pnJNmXZyPqAgESJnWLJsbfuAl0UflLCdl9slPYE=",
       "System.Private.CoreLib.dll": "sha256-pUYF+nr8SzfBMCLc3FM2i\/YivXJlzztdLin+aUsoqP0=",
-      "WeatherApp.dll": "sha256-NeUl0M8DFbTVDp14AMXPsgXsDDQ55aVQ7JT0UYab3MQ="
+      "WeatherApp.dll": "sha256-pfrRTa3sKFbGa+lHKHbS9eVptLndRzlhcAfBn4Nj7vk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "WeatherApp.pdb": "sha256-XaXe2jw2nUxIHL5hVKqKpCChO9kXdNwqSx9glX4dMx8="
+      "WeatherApp.pdb": "sha256-MO8vAi+G1by36Znqtt3ce2WmnkcUEE+wToUJNZHsJmM="
     },
     "runtime": {
       "dotnet.7.0.4.ojlstzkjtu.js": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",

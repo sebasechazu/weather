@@ -9,29 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = WeatherApp
 build_property.RootNamespace = WeatherApp
-build_property.ProjectDir = D:\Workspace\_Personal\weather\WeatherApp\
+build_property.ProjectDir = D:\Workspace\_Personal\weather\weatherApp\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Workspace\_Personal\weather\WeatherApp
+build_property.MSBuildProjectDirectory = D:\Workspace\_Personal\weather\weatherApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Workspace/_Personal/weather/WeatherApp/App.razor]
+[D:/Workspace/_Personal/weather/weatherApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workspace/_Personal/weather/WeatherApp/MainLayout.razor]
+[D:/Workspace/_Personal/weather/weatherApp/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workspace/_Personal/weather/WeatherApp/Pages/Index.razor]
+[D:/Workspace/_Personal/weather/weatherApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workspace/_Personal/weather/WeatherApp/Pages/WeatherInfo.razor]
+[D:/Workspace/_Personal/weather/weatherApp/Pages/WeatherInfo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlckluZm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workspace/_Personal/weather/WeatherApp/_Imports.razor]
+[D:/Workspace/_Personal/weather/weatherApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

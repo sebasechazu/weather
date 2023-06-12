@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\_Personal\\weather\\WeatherApp\\WeatherApp.csproj": {}
+    "D:\\Workspace\\_Personal\\weather\\weatherApp\\WeatherApp.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\_Personal\\weather\\WeatherApp\\WeatherApp.csproj": {
+    "D:\\Workspace\\_Personal\\weather\\weatherApp\\WeatherApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\_Personal\\weather\\WeatherApp\\WeatherApp.csproj",
+        "projectUniqueName": "D:\\Workspace\\_Personal\\weather\\weatherApp\\WeatherApp.csproj",
         "projectName": "WeatherApp",
-        "projectPath": "D:\\Workspace\\_Personal\\weather\\WeatherApp\\WeatherApp.csproj",
+        "projectPath": "D:\\Workspace\\_Personal\\weather\\weatherApp\\WeatherApp.csproj",
         "packagesPath": "C:\\Users\\NataliaAlamo\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\_Personal\\weather\\WeatherApp\\obj\\",
+        "outputPath": "D:\\Workspace\\_Personal\\weather\\weatherApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

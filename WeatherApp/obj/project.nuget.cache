@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3MFyP4bFgqIdRdZ6/4+QDKfP1IGkwP6fOHwrxVQa9kOR7gm7N18NzHVj7z66UMBQ4dRl04bU67wTrdP7uq1VRw==",
+  "dgSpecHash": "PQe+YsFNLqyIA7XP0jVl2R8yAof1B34Z2xMaPpEzobHORPAdDwov0F8qnSaryZpyKpy96uzozW5JiLC1feqPJw==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\_Personal\\weather\\WeatherApp\\WeatherApp.csproj",
+  "projectFilePath": "D:\\Workspace\\_Personal\\weather\\weatherApp\\WeatherApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NataliaAlamo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\NataliaAlamo\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
