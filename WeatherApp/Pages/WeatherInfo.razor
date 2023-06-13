@@ -11,7 +11,6 @@
 
     </div>
 }
-
 @code {
     [Parameter]
     public WeatherData? weatherData { get; set; }
@@ -24,21 +23,9 @@
             case "pocas nubes":
                 return "wi-cloud";
             case "nubes":
-                return "wi-cloudy";
-            case "nubes dispersas":
-                return "wi-cloudy";
-            case "muy nuboso":
-                return "wy-cloudy";
-            case "lluvia de lluvia":
-                return "wi-rain";    
+                return "wi-cloudy";  
             case "lluvia":
                 return "wi-rain";           
-            case "tormenta":
-                return "wi-thunderstorm";
-            case "nieve":
-                return "wi-snow";
-            case "niebla":
-                return "wi-fog";
             default:
                 return "wi-meteor";
         }

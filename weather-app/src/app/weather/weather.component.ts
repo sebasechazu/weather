@@ -10,19 +10,18 @@ export class WeatherComponent {
 
   @Input() weatherData: WeatherData | undefined;
   getWeatherIconClass(description: string): string {
+
     switch (description.toLowerCase()) {
-      case 'despejado':
+      case 'cielo claro':
         return 'wi-day-sunny';
+      case 'pocas nubes':
+        return 'wi-cloud';
       case 'nubes':
         return 'wi-cloudy';
       case 'lluvia':
         return 'wi-rain';
-      case 'tormenta':
-        return 'wi-thunderstorm';
-      case 'nieve':
-        return 'wi-snow';
       default:
-        return 'wi-day-cloudy';
+        return 'wi-meteor';
     }
   }
 }
