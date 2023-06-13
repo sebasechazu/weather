@@ -13,15 +13,17 @@ export class WeatherComponent {
 
     switch (description.toLowerCase()) {
       case 'cielo claro':
-        return 'wi-day-sunny';
-      case 'pocas nubes':
-        return 'wi-cloud';
+        return 'bi-sun';
       case 'nubes':
-        return 'wi-cloudy';
+        return 'bi-cloud';
       case 'lluvia':
-        return 'wi-rain';
+        return 'bi-cloud-rain';
+      case 'tormenta':
+        return 'bi-cloud-lightning-rain';
+      case 'nieve':
+        return 'bi-snow';
       default:
-        return 'wi-meteor';
+        return 'bi-cloud-sun';
     }
   }
 }
