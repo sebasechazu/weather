@@ -2,14 +2,40 @@
 
 @if (weatherData != null)
 {
-    <div class="card" style="width: 18rem;">
-        <h3>@weatherData.Name</h3>
-        <p>Temperatura: @weatherData.Temperature °C</p>
-        <p>Humedad: @weatherData.Humidity %</p>
-        <p>Descripción: @weatherData.Description</p>
-        <i class="@GetWeatherIconClass(weatherData.Description)"></i>
-
+    <div class="weather-city">
+        <div class="city">
+            <div class="bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <p>@weatherData.Name, País?</p>
+            </div>
+        </div>
+        <div class="weather">
+            <i class="@GetWeatherIconClass(weatherData.Description)"></i>
+            <div>
+                <p class="temperature">@weatherData.Temperature <span>°C</span></p>
+                <p class="description">@weatherData.Description</p>
+            </div>
+        </div>
+        <ul class="data">
+            <li>
+                <i class="bi-wind"></i>
+                <p class="value">10 km/h</p>
+                <p class="title">Viento</p>
+            </li>
+            <li>
+                <i class="bi-umbrella"></i>
+                <p class="value">10 km/h</p>
+                <p class="title">Precipitaciones</p>
+            </li>
+            <li>
+                <i class="bi-moisture"></i>
+                <p class="value">@weatherData.Humidity</p>
+                <p class="title">Humedad</p>
+            </li>
+        </ul>
     </div>
+
+
 }
 @code {
     [Parameter]
