@@ -25,6 +25,8 @@ public class WeatherService
                 Temperature = response.Main.temp,
                 Humidity = response.Main.Humidity,
                 Description = response.Weather[0].Description,
+                WindSpeed = response.Wind.Speed,
+                Rain = response.Rain[0].Rain
             };
 
         }
@@ -36,6 +38,8 @@ public class WeatherApiResponse
 {
     public required string Name { get; set; }
     public required WeatherMain Main { get; set; }
+    public required WeatherWind Wind { get; set; }
+    public required WeatherRain[]  Rain { get; set; }
     public required WeatherDescription[] Weather { get; set; }
 }
 
@@ -48,4 +52,12 @@ public class WeatherMain
 public class WeatherDescription
 {
     public required string Description { get; set; }
+}
+public class WeatherWind
+{
+    public decimal Speed { get; set; }
+}
+public class WeatherRain
+{
+    public decimal Rain { get; set; }
 }

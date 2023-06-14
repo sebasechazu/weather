@@ -9,6 +9,7 @@ import { WeatherData } from '../Models/weather.model';
 export class WeatherComponent {
 
   @Input() weatherData: WeatherData | undefined;
+  
   getWeatherIconClass(description: string): string {
 
     switch (description.toLowerCase()) {

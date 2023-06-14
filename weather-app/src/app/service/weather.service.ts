@@ -19,6 +19,8 @@ export class WeatherService {
         return {
           name: response.name,
           temperature: response.main.temp,
+          tempmax: response.main.temp_max,
+          wind: response.wind.speed,
           humidity: response.main.humidity,
           description: response.weather[0].description,
         };
