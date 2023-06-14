@@ -4,12 +4,10 @@ using WeatherApp.Models;
 public class WeatherService
 {
     private readonly HttpClient _httpClient;
-
     public WeatherService(HttpClient httpClient)
     {
         _httpClient = httpClient;
     }
-
     public async Task<WeatherData?> GetWeatherData(string cityName)
     {
         string apiKey = "b43f54cd7339e23df3cf11339274bed5";
