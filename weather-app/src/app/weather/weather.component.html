@@ -1,9 +1,32 @@
-  <div class="card" style="width: 18rem;">
-  <div *ngIf="weatherData" class="card-body">
-    <h3 class="card-title">{{ weatherData.name }}</h3>
-    <p class="card-text">Temperatura: {{ weatherData.temperature }} °C</p>
-    <p class="card-text">Humedad: {{ weatherData.humidity }} %</p>
-    <p class="card-text">Descripción: {{ weatherData.description }}</p>
-    <i [class]="getWeatherIconClass(weatherData.description)" ></i>
+<div class="weather-city">
+  <div class="city">
+    <div class="bg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <p>{{ weatherData.name }}</p>
+    </div>
   </div>
+  <div class="weather">
+    <i [class]="getWeatherIconClass(weatherData.description)" ></i>
+    <div>
+      <p class="temperature">{{ weatherData.temperature }} <span>°C</span></p>
+      <p class="description">{{ weatherData.description }}</p>
+    </div>
+  </div>
+  <ul class="data">
+    <li>
+        <i class="bi-wind"></i>
+        <p class="value">10 km/h</p>
+        <p class="title">Viento</p>
+    </li>
+    <li>
+        <i class="bi-umbrella"></i>
+        <p class="value">10 km/h</p>
+        <p class="title">Precipitaciones</p>
+    </li>
+    <li>
+        <i class="bi-moisture"></i>
+        <p class="value">{{ weatherData.humidity }}</p>
+        <p class="title">Humedad</p>
+    </li>
+  </ul>
 </div>
