@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'weather_data.dart';
+import 'package:weather_app/config.dart';
 
 class WeatherService {
   Future<WeatherData> getWeatherData(String city) async {
-    const apiKey = 'b43f54cd7339e23df3cf11339274bed5';
     final apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric&lang=es';
 
     final response = await http.get(Uri.parse(apiUrl));
