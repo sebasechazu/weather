@@ -1,33 +1,30 @@
-import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 
 import 'weather_data.dart';
+
 class WeatherChild extends StatelessWidget {
   final WeatherData weatherData;
 
+  const WeatherChild({super.key, required this.weatherData});
 
-  const WeatherChild({required this.weatherData});
-
-  
   String getWeatherIconClass(String description) {
-  switch (description.toLowerCase()) {
-    case 'cielo claro':
-      return 'bi-sun';
-    case 'nubes':
-      return 'bi-cloud';
-    case 'lluvia':
-      return 'bi-cloud-rain';
-    case 'tormenta':
-      return 'bi-cloud-lightning-rain';
-    case 'nieve':
-      return 'bi-snow';
-    default:
-      return 'bi-cloud-sun';
+    switch (description.toLowerCase()) {
+      case 'cielo claro':
+        return 'bi-sun';
+      case 'nubes':
+        return 'bi-cloud';
+      case 'lluvia':
+        return 'bi-cloud-rain';
+      case 'tormenta':
+        return 'bi-cloud-lightning-rain';
+      case 'nieve':
+        return 'bi-snow';
+      default:
+        return 'bi-cloud-sun';
+    }
   }
-}
 
-
-   @override
+  @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
@@ -68,8 +65,8 @@ class WeatherChild extends StatelessWidget {
             child: Row(
               children: [
                 //const Icon(
-                  //getWeatherIconClass(weatherData.description) as IconData?,
-                  //size: 24.0,
+                //getWeatherIconClass(weatherData.description) as IconData?,
+                //size: 24.0,
                 //),
                 const SizedBox(width: 8.0),
                 Column(

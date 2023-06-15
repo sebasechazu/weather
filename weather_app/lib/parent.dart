@@ -50,26 +50,24 @@ class _WeatherParentState extends State<WeatherParent> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('ingrese el nombre de la ciudad',
+            const Text('Ingrese el nombre de la ciudad',
                 style: TextStyle(
                   color: Color(0xFFE3E4E6), // Equivalent to --colorLight
                   fontSize: 18.0,
                   fontWeight: FontWeight.normal,
                 )),
-                
             Row(
               children: [
                 Expanded(
                   child: TextFormField(
                     controller: _cityController,
                     decoration: const InputDecoration(
-                      hintText: "ciudad",
+                      hintText: "Ciudad",
                       hintStyle: TextStyle(
-                        color: Color(0xFF0FB0E9),
+                        color: Color(0xFFE3E4E6),
                         fontFamily: 'Noto Sans',
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
-                        
                       ),
                       border: InputBorder.none,
                       //labelText: 'Ciudad',
