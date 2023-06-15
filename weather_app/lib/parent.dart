@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'child.dart';
 import 'weather_data.dart';
 import 'weather_service.dart';
+import 'style.dart';
 
 // ignore: use_key_in_widget_constructors
 class WeatherParent extends StatefulWidget {
@@ -39,20 +40,21 @@ class _WeatherParentState extends State<WeatherParent> {
         title: const Text(
           'Weather App',
           style: TextStyle(
-              color: Color(0xFFE3E4E6),
+              color: colorDark,
               fontSize: 24.0,
-              fontWeight: FontWeight.bold),
+              letterSpacing: 2,
+              fontWeight: FontWeight.normal),
         ),
         backgroundColor: const Color(0xFF191C2D),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
+      body: Center(
+        //padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text('Ingrese el nombre de la ciudad',
                 style: TextStyle(
-                  color: Color(0xFFE3E4E6), // Equivalent to --colorLight
+                  color: Color(0xFFE3E4E6),
                   fontSize: 18.0,
                   fontWeight: FontWeight.normal,
                 )),
