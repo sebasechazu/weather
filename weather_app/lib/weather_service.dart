@@ -12,12 +12,16 @@ class WeatherService {
       final jsonData = json.decode(response.body);
       final name = jsonData['name'];
       final temperature = jsonData['main']['temp'];
+      final wind = jsonData['wind']['speed'];
+      final tempmax = jsonData['main']['temp_max'];
       final humidity = jsonData['main']['humidity'];
       final description = jsonData['weather'][0]['description'];
 
       return WeatherData(
         name: name,
         temperature: temperature,
+        tempmax: tempmax,
+        wind: wind,
         humidity: humidity,
         description: description,
       );

@@ -34,42 +34,59 @@ class _WeatherParentState extends State<WeatherParent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF191C2D),
       appBar: AppBar(
-        title: const Text('Weather App'),
+        title: const Text(
+          'Weather App',
+          style: TextStyle(
+              color: Color(0xFFE3E4E6),
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: const Color(0xFF191C2D),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'ingrese el nombre de la ciudad',
-              style: TextStyle(fontSize: 16.0),
-            ),
+            const Text('ingrese el nombre de la ciudad',
+                style: TextStyle(
+                  color: Color(0xFFE3E4E6), // Equivalent to --colorLight
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.normal,
+                )),
+                
             Row(
               children: [
                 Expanded(
                   child: TextFormField(
                     controller: _cityController,
                     decoration: const InputDecoration(
-                      labelText: 'Ciudad',
+                      hintText: "ciudad",
+                      hintStyle: TextStyle(
+                        color: Color(0xFF0FB0E9),
+                        fontFamily: 'Noto Sans',
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                        
+                      ),
+                      border: InputBorder.none,
+                      //labelText: 'Ciudad',
                     ),
                   ),
                 ),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 20.0),
                 ElevatedButton(
                   onPressed: _getWeather,
                   child: const Text('Obtener clima'),
                 ),
-                
               ],
-            ),const SizedBox(height: 16.0),
-                if (_weatherData != null)
-                  WeatherChild(weatherData: _weatherData!),
+            ),
+            const SizedBox(height: 16.0),
+            if (_weatherData != null) WeatherChild(weatherData: _weatherData!),
           ],
-          
         ),
-
       ),
     );
   }
