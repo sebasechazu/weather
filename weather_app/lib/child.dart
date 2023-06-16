@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/style.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'weather_data.dart';
 
@@ -29,32 +31,71 @@ class WeatherChild extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
-        color: Colors.white,
+        color: colorDark,
       ),
       child: Column(
         children: [
           Container(
-            decoration: const BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(8.0),
-                topRight: Radius.circular(8.0),
-              ),
+            decoration: BoxDecoration(
+              color: colorBlue,
+              borderRadius: BorderRadius.circular(8),
             ),
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(16.0),
             child: Row(
               children: [
-                const Icon(
-                  Icons.location_on,
-                  color: Colors.white,
-                  size: 24.0,
+                SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: SvgPicture.network(
+                    'http://www.w3.org/2000/svg',
+                    color: colorLighten,
+                  ),
                 ),
-                const SizedBox(width: 8.0),
+                const SizedBox(width: 8),
                 Text(
                   weatherData.name,
                   style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16.0,
+                    fontSize: 16,
+                    color: colorLighten,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(
+                        Icons.wb_sunny,
+                        color: colorLighten,
+                        size: 48.0,
+                      ),
+                      const SizedBox(width: 8.0),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '${weatherData.temperature} °C',
+                            style: const TextStyle(
+                              fontSize: 34.0,
+                              fontWeight: FontWeight.bold,
+                              color: colorLighten,
+                            ),
+                          ),
+                          Text(
+                            weatherData.description,
+                            style: const TextStyle(color: colorLighten),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -64,45 +105,70 @@ class WeatherChild extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                //const Icon(
-                //getWeatherIconClass(weatherData.description) as IconData?,
-                //size: 24.0,
-                //),
-                const SizedBox(width: 8.0),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      '${weatherData.temperature} °C',
-                      style: const TextStyle(
-                        fontSize: 24.0,
-                        fontWeight: FontWeight.bold,
+                Expanded(
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading:
+                            const Icon(Icons.wb_sunny, color: colorLighten),
+                        title: Text(
+                          '${weatherData.wind} m/s',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: colorLighten,
+                          ),
+                        ),
+                        subtitle: const Text('Viento',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: colorLighten,
+                            )),
                       ),
-                    ),
-                    Text(weatherData.description),
-                  ],
+                    ],
+                  ),
                 ),
-              ],
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                ListTile(
-                  leading: const Icon(Icons.wb_sunny),
-                  title: Text('${weatherData.wind} m/s'),
-                  subtitle: const Text('Viento'),
+                Expanded(
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading:
+                            const Icon(Icons.thermostat, color: colorLighten),
+                        title: Text(
+                          '${weatherData.tempmax} °C',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: colorLighten,
+                          ),
+                        ),
+                        subtitle: const Text('Temp Max',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: colorLighten,
+                            )),
+                      ),
+                    ],
+                  ),
                 ),
-                ListTile(
-                  leading: const Icon(Icons.thermostat),
-                  title: Text('${weatherData.tempmax} °C'),
-                  subtitle: const Text('Temp Max'),
-                ),
-                ListTile(
-                  leading: const Icon(Icons.water),
-                  title: Text('${weatherData.humidity}'),
-                  subtitle: const Text('Humedad'),
+                Expanded(
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.water, color: colorLighten),
+                        title: Text(
+                          '${weatherData.humidity}',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: colorLighten,
+                          ),
+                        ),
+                        subtitle: const Text('Humedad',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: colorLighten,
+                            )),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

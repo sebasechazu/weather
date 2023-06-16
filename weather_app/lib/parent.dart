@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/style.dart';
 
 import 'child.dart';
 import 'weather_data.dart';
 import 'weather_service.dart';
-import 'style.dart';
-
-// ignore: use_key_in_widget_constructors
 class WeatherParent extends StatefulWidget {
+  const WeatherParent({super.key});
+
   @override
   // ignore: library_private_types_in_public_api
   _WeatherParentState createState() => _WeatherParentState();
@@ -14,80 +14,93 @@ class WeatherParent extends StatefulWidget {
 
 class _WeatherParentState extends State<WeatherParent> {
   final _weatherService = WeatherService();
-  final _cityController = TextEditingController();
+  late String city;
   WeatherData? _weatherData;
-
-  @override
-  void dispose() {
-    _cityController.dispose();
-    super.dispose();
-  }
-
-  // service
-  Future<void> _getWeather() async {
-    final city = _cityController.text;
-    final weatherData = await _weatherService.getWeatherData(city);
-    setState(() {
-      _weatherData = weatherData;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF191C2D),
-      appBar: AppBar(
-        title: const Text(
-          'Weather App',
-          style: TextStyle(
-              color: colorDark,
-              fontSize: 24.0,
-              letterSpacing: 2,
-              fontWeight: FontWeight.normal),
-        ),
-        backgroundColor: const Color(0xFF191C2D),
-      ),
-      body: Center(
-        //padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text('Ingrese el nombre de la ciudad',
-                style: TextStyle(
-                  color: Color(0xFFE3E4E6),
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.normal,
-                )),
-            Row(
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: _cityController,
-                    decoration: const InputDecoration(
-                      hintText: "Ciudad",
-                      hintStyle: TextStyle(
-                        color: Color(0xFFE3E4E6),
-                        fontFamily: 'Noto Sans',
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+      backgroundColor: colorDarken,
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          return Center(
+            child: SizedBox(
+              width: 450,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'Weather App',
+                      style: TextStyle(
+                        color: colorLight,
+                        fontSize: 24,
+                        fontWeight: FontWeight.normal,
                       ),
-                      border: InputBorder.none,
-                      //labelText: 'Ciudad',
                     ),
-                  ),
+                    const SizedBox(height: 20),
+                    const Text(
+                      'Ingrese el nombre de una ciudad',
+                      style: TextStyle(
+                        color: colorLight,
+                        fontSize: 18,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Center(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(color: colorLighten),
+                              onChanged: (value) {
+                                setState(() {
+                                  city = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          GestureDetector(
+                            onTap: () {
+                              getWeather(city);
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color:
+                                    colorDarken, 
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: const Icon(
+                                Icons.search,
+                                color:
+                                    colorLighten, 
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    if (_weatherData != null)
+                      WeatherChild(weatherData: _weatherData!)
+                  ],
                 ),
-                const SizedBox(height: 20.0),
-                ElevatedButton(
-                  onPressed: _getWeather,
-                  child: const Text('Obtener clima'),
-                ),
-              ],
+              ),
             ),
-            const SizedBox(height: 16.0),
-            if (_weatherData != null) WeatherChild(weatherData: _weatherData!),
-          ],
-        ),
+          );
+        },
       ),
     );
+  }
+
+  Future<void> getWeather(String city) async {
+    final weatherData = await _weatherService.getWeatherData(city);
+    setState(() {
+      _weatherData = weatherData;
+    });
   }
 }
